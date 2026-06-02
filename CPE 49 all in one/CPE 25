@@ -1,0 +1,30 @@
+/*#include <iostream>
+#include <string>
+using namespace std;
+
+string key = "qwertyuiop[]\\asdfghjkl;'zxcvbnm,./";
+
+int main() {
+	string cmd;
+	while (getline(cin, cmd)) {
+		for (int i = 0; i < cmd.length(); i++) {
+			char n = cmd[i];
+			if (n == ' ') {
+				cout << " ";
+			}
+			else {
+				for (int j = 0; j < key.length(); j++) {
+					if (n == key[j]) {
+						cout << key[j - 2];
+						break;
+					}
+					else {
+						continue;
+					}
+				}
+			}
+		}
+		cout << '\n';
+	}
+	return 0;
+}*/

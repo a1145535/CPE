@@ -1,0 +1,29 @@
+/*#include <iostream>
+#include <algorithm>
+#include <vector>
+using namespace std;
+
+int main() {
+	int n;
+	while (cin >> n) {
+		vector<int>d(n);
+		for (int i = 0; i < n; i++) {
+			cin >> d[i];
+		}
+
+		sort(d.begin(), d.end());
+
+		int m1 = d[(n - 1) / 2];
+		int m2 = d[n / 2];
+		int count = 0;
+
+		for (int i = 0; i < n; i++) {
+			if (d[i] >= m1 && d[i] <= m2) {
+				count++;
+			}
+		}
+
+		cout << m1 << " " << count << " " << (m2 - m1 + 1) << '\n';
+	}
+	return 0;
+}*/

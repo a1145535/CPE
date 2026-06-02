@@ -1,0 +1,29 @@
+/*#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main() {
+	string cmd;
+	vector<string>lines;
+	int max_len = 0;
+
+	while (getline(cin, cmd)) {
+		lines.push_back(cmd);
+		if (cmd.length() > max_len) {
+			max_len = cmd.length();
+		}
+	}
+	for (int i = 0; i < max_len; i++) {
+		for (int j = lines.size() - 1; j >= 0; j--) {
+			if (i < lines[j].length()) {
+				cout << lines[j][i];
+			}
+			else {
+				cout << " ";
+			}
+			cout << '\n';
+		}
+	}
+	return 0;
+}*/

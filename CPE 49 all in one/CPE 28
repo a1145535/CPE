@@ -1,0 +1,40 @@
+/*#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+const double IFS = 1e-9;
+
+bool is_equal(double a, double b) {
+	return abs(a - b) < IFS;
+}
+
+int main() {
+	double a1, a2, b1, b2, c1, c2, d1, d2;
+	while (cin >> a1 >> a2 >> b1 >> b2 >> c1 >> c2 >> d1 >> d2) {
+		cout << fixed << setprecision(3);
+
+		if (is_equal(c1, a1) && is_equal(c2, a2)) {
+			double x = b1 + d1 - a1;
+			double y = b2 + d2 - a2;
+			cout << x << " " << y;
+		}
+		else if (is_equal(c1, b1) && is_equal(c2, b2)) {
+			double x = a1 + d1 - b1;
+			double y = a2 + d2 - b2;
+			cout << x << " " << y;
+		}
+		else if (is_equal(d1, a1) && is_equal(d2, a2)) {
+			double x = b1 + c1 - a1;
+			double y = b2 + c2 - a2;
+			cout << x << " " << y;
+		}
+		else if (is_equal(d1, b1) && is_equal(d2, b2)) {
+			double x = a1 + c1 - b1;
+			double y = a2 + c2 - b2;
+			cout << x << " " << y;
+		}
+		cout << '\n';
+	}
+	return 0;
+}*/

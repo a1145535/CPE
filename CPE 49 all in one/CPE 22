@@ -1,0 +1,38 @@
+/*#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+	long long n, m;
+	while (cin >> n >> m) {
+		vector<int>a;
+		a.push_back(n);
+		bool bre = false;
+		while (n > 1) {
+			if (n % m == 0) {
+				int cal = n / m;
+				a.push_back(cal);
+				n = n / m;
+			}
+			else {
+				cout << "Boring!";
+				bre = true;
+				break;
+			}
+		}
+		if (!bre) {
+			bool first = true;
+			for (int i = 0; i < a.size(); i++) {
+				if (first) {
+					cout << a[i];
+					first = false;
+				}
+				else {
+					cout << " " << a[i];
+				}
+			}
+		}
+		cout << '\n';
+	}
+	return 0;
+}*/

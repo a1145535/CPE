@@ -1,0 +1,31 @@
+/*#include <iostream>
+using namespace std;
+
+int countOnes(int n) {
+	int count = 0;
+	while (n > 0) {
+		if (n % 2 == 1) count++;
+		n /= 2;
+	}
+	return count;
+}
+
+int main() {
+	int n;
+	cin >> n;
+	while (n--) {
+		int M;
+		cin >> M;
+		int b1 = countOnes(M);
+
+		int b2 = 0;
+		int temp = M;
+		while (temp > 0) {
+			int digit = temp % 10;
+			b2 += countOnes(digit);
+			temp / 10;
+		}
+		cout << b1 << " " << b2 << '\n';
+	}
+	return 0;
+}*/

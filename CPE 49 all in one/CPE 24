@@ -1,0 +1,31 @@
+/*#include <iostream>
+#include <cmath>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+int main() {
+	int s, a;
+	string unit;
+	const double PI = acos(-1.0);
+	const double r = 6440.0;
+
+	while (cin >> s >> a >> unit) {
+		if (unit == "min") {
+			a /= 60;
+		}
+
+		if (a > 180) {
+			a = 360.0 - a;
+		}
+
+		double R = r + s;
+		double rad = a * PI / 180;
+
+		double arc = R * rad;
+		double chord = 2.0 * R * sin(rad / 2.0);
+
+		cout << fixed << setprecision(6) << arc << " " << chord << '\n';
+	}
+	return 0;
+}*/

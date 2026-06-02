@@ -1,0 +1,43 @@
+/*#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <cctype>
+using namespace std;
+
+int main() {
+	cin.ignore();
+	int count[26] = { 0 };
+	char alpha[26] = { 0 };
+	for (int i = 0; i < 26; i++) {
+		alpha[i] = 'A' + i;
+	}
+	int N;
+	string cmd;
+	cin >> N;
+	while (N--) {
+		getline(cin, cmd);
+		for (int i = 0; i < cmd.length(); i++) {
+			if (isalpha(cmd[i])) {
+				char c = toupper(cmd[i]);
+				count[c - 'A']++;
+			}
+		}
+	}
+
+	for (int i = 0; i < 26; i++) {
+		for (int j = 0; j < 26; j++) {
+			if (count[j] < count[j + 1] || (count[j] == count[j + 1] && alpha[j] > alpha[j])) {
+				swap(count[j], count[j + 1]);
+				swap(alpha[j], alpha[j + 1]);
+			}
+		}
+	}
+
+	for (int i = 0; i < 26; i++) {
+		if(count[i] >0){
+			cout << alpha[i] << " " << count[i] << '\n';
+		}
+	}
+	return 0;
+}*/

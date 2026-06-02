@@ -1,0 +1,43 @@
+/*#include <iostream>
+#include <cmath>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main() {
+	int n;
+	while (cin >> n) {
+		vector<int>s(n);
+		vector<bool>cal_found(n, false);
+		for (int i = 0; i < n; i++) {
+			cin >> s[i];
+		}
+
+		bool is_jolly = true;
+		if (n > 1) {
+			for (int i = 0; i < n; i++) {
+				int cal = abs(s[i] - s[i + 1]);
+				if (cal >= 1 && cal <= n - 1 && !cal_found[cal]) {
+					cal_found[cal] = true;
+				}
+				else {
+					is_jolly = false;
+					break;
+				}
+			}
+		}
+		for (int i = 0; i < n; i++) {
+			if (!cal_found[i]) {
+				is_jolly = false;
+				break;
+			}
+		}
+		if (is_jolly) {
+			cout << "Jolly\n";
+		}
+		else {
+			cout << "Not jolly\n";
+		}
+	}
+	return 0;
+}*/

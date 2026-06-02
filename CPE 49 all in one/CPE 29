@@ -1,0 +1,36 @@
+/*#include <iostream>
+#include <map>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main() {
+	string a, b;
+	while (getline(cin, a) && getline(cin, b)) {
+		ios_base::sync_with_stdio(false);
+		cin.tie(NULL);
+		map<char, int>counta;
+		map<char, int>countb;
+		for (char c: a) {
+			if (c >= 'a' && c <= 'z') {
+				counta[c]++;
+			}
+		}
+		for (char c : b) {
+			if (c >= 'a' && c <= 'z') {
+				countb[c]++;
+			}
+		}
+		string result = "";
+		for (char c = 'a'; c <= 'z'; c++) {
+			if (counta.count(c) && countb.count(c)) {
+				char com_count = min(counta.count(c), countb.count(c));
+				for (int i = 0; i < com_count; i++) {
+					result += c;
+				}
+			}
+		}
+		cout << result << '\n';
+	}
+	return 0;
+}*/

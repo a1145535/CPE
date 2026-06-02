@@ -1,0 +1,43 @@
+/*#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+struct charfreq {
+	int ascii;
+	int freq;
+};
+
+bool cmp(charfreq a, charfreq b) {
+	if (a.freq != b.freq) return a.freq < b.freq;
+	return a.ascii > b.ascii;
+}
+
+int main() {
+	string line;
+	bool first = true;
+
+	while (getline(cin, line)) {
+		if (!first)cout << '\n';
+		first = false;
+
+		int count[256] = { 0 };
+		for (char c : line) {
+			if (c >= 32)count[(int)c]++;
+		}
+
+		vector<charfreq> results;
+		for (int i = 0; i < 256; i++) {
+			if (count[i] > 0) {
+				results.push_back({ i, count[i] });
+			}
+		}
+
+		sort(results.begin(), results.end(), cmp);
+		for (auto rf : results) {
+			cout << rf.ascii << " " << rf.freq << '\n';
+		}
+	}
+	return 0;
+}*/

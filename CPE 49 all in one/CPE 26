@@ -1,0 +1,33 @@
+/*#include <iostream>
+#include <map>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+int main() {
+	int N;
+	cin >> N;
+	cin.ignore();
+	string dummy;
+	getline(cin, dummy);
+	while (N--) {
+		map<string, int>m;
+		string cmd;
+		int tot = 0;
+		while (getline(cin, cmd)) {
+			if (cmd.empty()) {
+				break;
+			}
+			m[cmd]++;
+			tot++;
+		}
+		for (auto p : m) {
+			double cal = p.second / (double)tot * 100;
+			cout << fixed << setprecision(4) << p.first << " " << cal << '\n';
+		}
+		if (N > 0) {
+			cout << '\n';
+		}
+	}
+	return 0;
+}*/

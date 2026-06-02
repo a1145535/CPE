@@ -1,0 +1,19 @@
+/*#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+	int s;
+	long long d;
+	while (cin >> s >> d) {
+		vector<int>v;
+		while (v.size() < d) {
+			for (int i = s; i > 0; i--) {
+				v.push_back(s);
+			}
+			s++;
+		}
+		cout << v[d - 1] << '\n';
+	}
+	return 0;
+}*/

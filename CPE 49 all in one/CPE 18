@@ -1,0 +1,41 @@
+/*#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int get_val(char c) {
+	if (isdigit(c))return c - '0';
+	if (isupper(c))return c - 'A' + 10;
+	if (islower(c))return c - 'a' + 36;
+	return -1;
+}
+
+int main() {
+	string s;
+	while (cin >> s) {
+		long long sum = 0;
+		int max_val = 1;
+
+		for (char c : s) {
+			int v = get_val(c);
+			if (v < 0)continue;
+			sum += v;
+			if (v > max_val) max_val = v;
+		}
+
+		bool found = false;
+
+		for (int n = max_val + 1; n < 62; n++) {
+			if (sum % (n - 1) == 0) {
+				cout << n << '\n';
+				found = true;
+				break;
+			}
+		}
+
+		if (!found) {
+			cout << "such number is imposible!" << '\n';
+		}
+	}
+	return 0;
+}*/

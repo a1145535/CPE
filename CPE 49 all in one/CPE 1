@@ -1,0 +1,35 @@
+/*#include <iostream>
+using namespace std;
+
+int main() {
+	int a, b;
+	while (cin >> a >> b) {
+		int s = a, e = b;
+		if (s > e) {
+			int t = s;
+			s = e;
+			e = t;
+		}
+
+		int max_val = 0;
+		for (int i = s; i <= e; i++) {
+			int n = i;
+			int count = 1;
+			while (n != 1) {
+				if (n % 2 == 0) {
+					n = n / 2;
+					count++;
+				}
+				else {
+					n = n * 3 + 1;
+					count++;
+				}
+			}
+			if (count > max_val) {
+				max_val = count;
+			}
+		}
+		cout << a << " " << b << " " << max_val << '\n';
+	}
+	return 0;
+}*/
