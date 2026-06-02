@@ -1,0 +1,28 @@
+/*#include <iostream>
+#include <cmath>
+using namespace std;
+
+long long steps(long long x, long long y) {
+	long long s = x + y;
+	return s * (s + 1) / 2 + x;
+}
+
+int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+
+	int t;
+	if (cin >> t) {
+		for (int i = 1; i <= t; i++) {
+			long long x1, y1, x2, y2;
+			cin >> x1 >> y1 >> x2 >> y2;
+
+			long long steps1 = steps(x1, y2);
+			long long steps2 = steps(x2, y2);
+
+			long long ans = abs(steps1 - steps2);
+			cout << "Case " << i << ": " << ans << '\n';
+		}
+	}
+	return 0;
+}*/

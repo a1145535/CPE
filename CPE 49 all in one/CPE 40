@@ -1,0 +1,54 @@
+/*#include <iostream>
+#include <string>
+#include <vector>
+#include <cmath>
+using namespace std;
+
+int main() {
+	long long n;
+	while (cin >> n && n != 0) {
+		vector<long long>v;
+		v.push_back(1);
+		while (true) {
+			long long num = 0;
+			num = pow(2, v.size());
+			if (num > 2147483647) {
+				break;
+			}
+			else {
+				v.push_back(num);
+			}
+		}
+		bool start = false;
+		string result = "";
+		for (long long i = v.size() - 1; i >= 0; i--) {
+			if (!start) {
+				if (n < v[i]) {
+					continue;
+				}
+				else {
+					start = true;
+					n -= v[i];
+					result += "1";
+				}
+			}
+			else {
+				if (n < v[i]) {
+					result += "0";
+				}
+				else {
+					result += "1";
+					n -= v[i];
+				}
+			}
+		}
+		int one_count = 0;
+		for (int j = 0; j < result.length(); j++) {
+			if (result[j] == '1') {
+				one_count++;
+			}
+		}
+		cout << "The parity of " << result << " is " << one_count << " (mod 2).\n";
+	}
+	return 0;
+}*/

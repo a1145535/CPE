@@ -1,0 +1,55 @@
+/*#include <iostream>
+#include <string>
+using namespace std;
+
+string fingerTable[256];
+
+void initable(){
+    fingerTable['c'] = "0111001111";
+    fingerTable['d'] = "0111001110";
+    fingerTable['e'] = "0111001100";
+    fingerTable['f'] = "0111001000";
+    fingerTable['g'] = "0111000000";
+    fingerTable['a'] = "0110000000";
+    fingerTable['b'] = "0100000000";
+    fingerTable['C'] = "0010000000";
+    fingerTable['D'] = "1111001110";
+    fingerTable['E'] = "1111001100";
+    fingerTable['F'] = "1111001000";
+    fingerTable['G'] = "1111000000";
+    fingerTable['A'] = "1110000000";
+    fingerTable['B'] = "1100000000";
+}
+
+int main() {
+    initable();
+	int t;
+	while (cin >> t) {
+		cin.ignore();
+		int finger[10] = { 0 };
+		while (t--) {
+			string s;
+            getline(cin, s);
+            int count[10] = { 0 };
+            string cur_press = "0000000000";
+
+            for (char c : s) {
+                string next_press = fingerTable[c];
+                if (next_press.empty()) {
+                    next_press = "0000000000";
+                }
+                for (int i = 0; i < 10; i++) {
+                    if (cur_press[i] == '0' && next_press[i] == '1') {
+                        count[i]++;
+                    }
+                }
+                cur_press = next_press;
+            }
+            for (int i = 0; i < 10; i++) {
+                cout << count[i] << (i < 9 ? " " : "");
+            }
+            cout << '\n';
+		}
+	}
+	return 0;
+}*/
